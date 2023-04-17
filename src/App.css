@@ -2,37 +2,54 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  font-size: 50px;
+  color: crimson;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a {
+  text-decoration: none;
+  color: lightskyblue;
+  font-weight: 600;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+a:hover {
+  color: palevioletred;
 }
 
-.App-link {
-  color: #61dafb;
+.products_grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.products_grid img {
+  object-fit: contain;
+  width: 100px;
+  height: 150px;
+  margin-top: 8px;
+}
+
+.product_details {
+  width: 40%;
+  margin: 0 auto;
+}
+
+.product_details h3 {
+  margin-top: 8vh;
+}
+
+.product_details img {
+  width: 100%;
+}
+
+.price {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.product_item {
+  border: 3px solid lightskyblue;
+  border-radius: 10px;
+  margin: 10px 10px;
 }
