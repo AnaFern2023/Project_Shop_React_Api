@@ -11,6 +11,7 @@ function App() {
       <Routes>
         <Route path='/' element={<ProductList />} />
         <Route path='/details/:id' element={<ProductDetail />} />
+        {/* /details/:id sieht aus wie in der Pfadleiste der Website --> localhost:3000/details/1 */}
       </Routes>
     </div>
   );

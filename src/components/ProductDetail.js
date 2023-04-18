@@ -16,8 +16,8 @@ const ProductDetail = () => {
                 setProducts(json);
             })
     }, [])
+    // muss gemappt werden und vorher gefiltert
 
-    {/* muss gemappt werden und vorher gefiltert */ }
     const eachProductDetail = products.filter((element) => {
         console.log(productParams.id);
         return element.id.toString() === productParams.id
